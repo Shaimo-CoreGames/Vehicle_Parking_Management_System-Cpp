@@ -1,53 +1,42 @@
-# Vehicle_Parking_Management_System
-My first C++ project based on OOP.
-The Vehicle Management System (VMS) is a C++ console-based application designed to manage vehicle parking records, complaints, and total earnings generated from different types of vehicles.
-It provides separate interfaces for Admin and Customer, offering smooth management and easy record handling.
-Features:
-  Admin Panel:-
-    Add new vehicle records
-    Search vehicle details
-    Update vehicle information
-    Delete vehicle entries
-    View list of all vehicles
-    Register complaints
-    Check total earnings
-    Secure login system (password-protected access)
+# Vehicle Management System - C++ Project
 
-  Customer Panel:-
-    Park a vehicle
-    Search parked vehicle
-    Register a complaint
-    Logout with a clean exit message
+This is my first project **Vehicle Management System** implemented in **C++** that helps manage vehicle records, track earned money based on vehicle types, and handle complaints. It provides separate interfaces for **admin** and **customer** users with a console-based interactive menu.
+
+---
+
+## Features
+    ### Admin Features
+    - Add, search, update, and delete vehicle records
+    - List all vehicles in the system
+    - Track earned money by vehicle type
+    - Register complaints related to vehicles
+    - Admin authentication (password-protected)
     
-  Vehicle Categories & Charges:-
-    The system tracks earnings based on vehicle type:
-    Vehicle Type	Parking Fee
-    Car	100
-    Bus	200
-    Truck	400
-    Bike	50
-    Cycle	20
-All earnings are stored in EarnedMoney.txt.
+    ### Customer Features
+    - Park a vehicle (add vehicle)
+    - Search for vehicle records
+    - Register complaints
+    - Logout functionality
+    
+    ### Vehicle and Earnings Tracking
+    - Supports multiple vehicle types: Car, Bus, Truck, Bike, Cycle
+    - Calculates total earnings based on vehicle type:
+      - Car: 100 units
+      - Bus: 200 units
+      - Truck: 400 units
+      - Bike: 50 units
+      - Cycle: 20 units
+    - Maintains a persistent record of total earnings (`EarnedMoney.txt`)
+    
+    ### Complaint Handling
+    - Register complaints for any vehicle by its vehicle number
+    - Track complaint count and descriptions
+    - Persistent storage in vehicle records file (`VehicleData.txt`)
 
-  Data Storage:-
-The project uses file handling to store and manage vehicle data:
-Files Used:
-  VehicleData.txt – Stores all vehicle records
-  EarnedMoney.txt – Tracks total earnings
-Stored Information Includes:
-  Vehicle Number
-  Short & Full Description
-  Created/Updated by
-  Date & Time of record
-  Complaint history
-  Unique complaint counter
+---
 
-  Core Functionalities:-
-    Implemented Using OOP Concepts
-    Structures (struct)
-    Functions and modular programming
-    File handling (read/write/update/delete)
-    Menu-driven program
-    Separate admin/customer views
-    Data parsing using stringstream
-    Use of <chrono> for timestamps
+## Technology Stack
+    - **Language:** C++  
+    - **File Handling:** `fstream` for persistent storage  
+    - **Date & Time:** `<chrono>` and `<ctime>` for timestamps  
+    - **Console UI:** `iomanip` and colored output for enhanced UX  
